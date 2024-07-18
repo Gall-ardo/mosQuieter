@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mosquieter</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="language_selection">Language Selection</string>
+    <string name="who_we_are">Who We Are</string>
+    <string name="our_other_apps">Our Other Apps</string>
+    <string name="reference_article">Article Referenced</string>
+</resources>
