@@ -5,16 +5,50 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
+    private ImageButton pauseButton, settingsButton, nightButton;
+    private TextView pauseText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pauseButton = findViewById(R.id.button);
+        settingsButton = findViewById(R.id.button_open_settings);
+        nightButton = findViewById(R.id.button3);
+        pauseText = findViewById(R.id.pause_text);
+        pauseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (pauseText.getText().toString().equals("Click to continue.")) {
+                    pauseButton.invalidate();
+                    pauseButton.setImageResource(R.drawable.continue_icon); // Yeni resmi ayarla
+                    pauseText.setText("Click to pause.");
+                    // add method to play noise
+                } else {
+                    pauseButton.invalidate();
+                    pauseButton.setImageResource(R.drawable.pause_icon); // Yeni resmi ayarla
+                    pauseText.setText("Click to continue.");
+                }
+            }
+        });
+
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SettingsPage.class));
+            }
+        });
+
+
     }
 
     // Method to play noise
@@ -45,4 +79,6 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer = null;
         }
     }
+
+
 }
