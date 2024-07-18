@@ -5,4 +5,8 @@
     <string name="who_we_are">Who We Are</string>
     <string name="our_other_apps">Our Other Apps</string>
     <string name="reference_article">Article Referenced</string>
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Turkish</item>
+    </string-array>
 </resources>
