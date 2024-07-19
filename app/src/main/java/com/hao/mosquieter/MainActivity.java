@@ -29,18 +29,18 @@ public class MainActivity extends AppCompatActivity {
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(pauseText.getText().toString().equals("Currently on Night Mode")){
-                    Toast.makeText(MainActivity.this, "Change night mode to day mode to control noise manually.", Toast.LENGTH_SHORT).show();
+                if(pauseText.getText().toString().equals(getString(R.string.currently_on_night_mode))){
+                    Toast.makeText(MainActivity.this, R.string.change_to_day, Toast.LENGTH_SHORT).show();
                 }
                 else if (pauseText.getText().toString().equals("Click to continue.")) {
                     pauseButton.invalidate();
                     pauseButton.setImageResource(R.drawable.continue_icon);
-                    pauseText.setText("Click to pause.");
+                    pauseText.setText(R.string.click_to_pause);
                     // add method to play noise
                 } else {
                     pauseButton.invalidate();
                     pauseButton.setImageResource(R.drawable.pause_icon);
-                    pauseText.setText("Click to continue.");
+                    pauseText.setText(R.string.click_to_continue);
                     // add method to stop noise
                 }
             }
@@ -57,15 +57,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (dayText.getText().toString().equals("Day Mode")) {
                     nightButton.setImageResource(R.drawable.night_mode_icon);
-                    dayText.setText("Night Mode");
+                    dayText.setText(R.string.night_mode);
                     pauseButton.setImageResource(R.drawable.night_mode_icon_for_pausing_place);
-                    pauseText.setText("Currently on Night Mode");
+                    pauseText.setText(R.string.currently_on_night_mode);
                     // add method to play noise on night
                 } else {
                     nightButton.setImageResource(R.drawable.day_mode_icon);
-                    dayText.setText("Day Mode");
+                    dayText.setText(R.string.day_mode);
                     pauseButton.setImageResource(R.drawable.pause_icon);
-                    pauseText.setText("Click to continue.");
+                    pauseText.setText(R.string.click_to_continue);
                     // add method to stop noise
                 }
             }

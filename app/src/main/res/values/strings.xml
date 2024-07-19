@@ -9,6 +9,16 @@
     <string name="eng">English</string>
     <string name="tr">Turkish</string>
 
+    <string name="currently_on_night_mode">Currently on Night Mode.</string>
+    <string name="change_to_day">Change night mode to day mode to control noise manually.</string>
+    <string name="click_to_continue">Click to continue.</string>
+    <string name="click_to_pause">Click to pause.</string>
+    <string name="day_mode">Day Mode</string>
+    <string name="night_mode">Night Mode</string>
+
+
+
+
     <string-array name="language_array">
         <item>English</item>
         <item>Turkish</item>

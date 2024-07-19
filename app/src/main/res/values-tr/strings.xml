@@ -9,6 +9,15 @@
     <string name="choose_language">Dili seçiniz.</string>
     <string name="eng">İngilizce</string>
     <string name="tr">Türkçe</string>
+
+    <string name="currently_on_night_mode">Şu Anda Gece Modunda.</string>
+    <string name="change_to_day">Sesi manuel olarak kontrol etmek için gece modunu gündüz moduna değiştirin.</string>
+    <string name="click_to_continue">Devam ettirmek için tıklayın.</string>
+    <string name="click_to_pause">Durdurmak için tıklayın.</string>
+    <string name="day_mode">Gündüz Modu</string>
+    <string name="night_mode">Gece Mode</string>
+
+
     <string-array name="language_array">
         <item>İngilizce</item>
         <item>Türkçe</item>
