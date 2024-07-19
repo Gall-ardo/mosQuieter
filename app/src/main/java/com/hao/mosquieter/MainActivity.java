@@ -32,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 if(pauseText.getText().toString().equals(getString(R.string.currently_on_night_mode))){
                     Toast.makeText(MainActivity.this, R.string.change_to_day, Toast.LENGTH_SHORT).show();
                 }
-                else if (pauseText.getText().toString().equals("Click to continue.")) {
+                else if (pauseText.getText().toString().equals(getString(R.string.click_to_continue))) {
                     pauseButton.invalidate();
                     pauseButton.setImageResource(R.drawable.continue_icon);
                     pauseText.setText(R.string.click_to_pause);
                     // add method to play noise
-                } else {
+                }
+                else {
                     pauseButton.invalidate();
                     pauseButton.setImageResource(R.drawable.pause_icon);
                     pauseText.setText(R.string.click_to_continue);
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         nightButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (dayText.getText().toString().equals("Day Mode")) {
+                if (dayText.getText().toString().equals(getString(R.string.day_mode))) {
                     nightButton.setImageResource(R.drawable.night_mode_icon);
                     dayText.setText(R.string.night_mode);
                     pauseButton.setImageResource(R.drawable.night_mode_icon_for_pausing_place);

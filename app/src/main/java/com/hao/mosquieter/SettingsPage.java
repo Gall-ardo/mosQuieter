@@ -37,9 +37,12 @@ public class SettingsPage extends AppCompatActivity {
                 // Change the language to the selected item
                 if (item.equals(getString(R.string.eng))) {
                     setLocale(SettingsPage.this, "en");
+                    restartMainActivity();
+
                 }
                 else if (item.equals(getString(R.string.tr))) {
                     setLocale(SettingsPage.this, "tr");
+                    restartMainActivity();
                 }
             }
 
@@ -60,6 +63,13 @@ public class SettingsPage extends AppCompatActivity {
         resources.updateConfiguration(config, resources.getDisplayMetrics());
         Intent refresh = new Intent(activity, SettingsPage.class);
         startActivity(refresh);
+        finish();
+    }
+
+    private void restartMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
         finish();
     }
 }
