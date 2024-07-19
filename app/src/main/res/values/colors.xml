@@ -2,5 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_pink">#FFE5EC</color>
+    <color name="dark_pink">#FFC2D1</color>
+    <color name="darker_blue_background">#000C19</color>
+    <color name="dark_blue">#001833</color>
+
+
     <color name="text_background_light">#80FFFACD</color>
 </resources>

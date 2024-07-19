@@ -2,6 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MosQuieter" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:background">@color/darker_blue_background</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/dark_blue</item>
+        <item name="iconSettings">@drawable/settings_icon_white</item> <!-- Add this line -->
+
+
     </style>
 </resources>
