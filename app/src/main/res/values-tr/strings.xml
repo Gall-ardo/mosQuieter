@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Mosquieter</string>
+    <string name="app_name">mosQuieter</string>
     <string name="night_mode">Gece Modu</string>
     <string name="language_selection">Dil Seçimi</string>
     <string name="who_we_are">Biz Kimiz</string>
