@@ -3,8 +3,8 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="language_selection">Language Selection</string>
     <string name="who_we_are">Who We Are</string>
-    <string name="our_other_apps">Our Other Apps</string>
-    <string name="reference_article">Article Referenced</string>
+    <string name="our_other_apps">Our Other Apps: \n Stay Tuned!</string>
+    <string name="reference_article">Article Referenced: \n Lapshin, D.N., Vorontsov, D.D. Low-Frequency Sounds Repel Male Mosquitoes Aedes diantaeus N.D.K. (Diptera, Culicidae). Entmol. Rev. 98, 266–271 (2018). https://doi.org/10.1134/S0013873818030028</string>
     <string name="choose_language">Choose the language</string>
     <string name="eng">English</string>
     <string name="tr">Turkish</string>

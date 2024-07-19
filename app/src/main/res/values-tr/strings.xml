@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">mosQuieter</string>
-    <string name="dark_mode">Gece Modu</string>
+    <string name="dark_mode">Karanlık Mod</string>
     <string name="language_selection">Dil Seçimi</string>
     <string name="who_we_are">Biz Kimiz</string>
-    <string name="our_other_apps">Diğer Uygulamalarımız</string>
-    <string name="reference_article">Referans Makale</string>
+    <string name="our_other_apps">Diğer Uygulamalarımız: \n Beklemede Kalın!</string>
+    <string name="reference_article">Referans Makale: \n Lapshin, D.N., Vorontsov, D.D. Low-Frequency Sounds Repel Male Mosquitoes Aedes diantaeus N.D.K. (Diptera, Culicidae). Entmol. Rev. 98, 266–271 (2018). https://doi.org/10.1134/S0013873818030028 </string>
     <string name="choose_language">Dili seçiniz.</string>
     <string name="eng">İngilizce</string>
     <string name="tr">Türkçe</string>
